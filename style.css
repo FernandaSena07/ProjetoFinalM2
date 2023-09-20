@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Quicksand', sans-serif;
+
+}
+
 .navBar{
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -22,6 +27,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  right: 30px;
+  left: 20px;
+  position: absolute;
 }
 
 .menuBar ul{
@@ -64,4 +72,13 @@ ul li a{
   font-size: 20px;
   color: rgb(0, 0, 0);
   margin-bottom: 5%;
+}
+
+#buttonContact{
+  left: 80%;
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  font-family: 'Quicksand', sans-serif;
+
 }
