@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css"/>
+  <link rel="stylesheet" href="/src/pages/stylePages.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
+<body>
+  <div class="navBar">
+    <a href="/index.html">
+      <img src="/src/imagens/logo.png" >
+    </a>
+    <div class="menuBar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/src/pages/services.html">Services</a></li>
+        <li><a href="/src/pages/about.html">About</a></li>
+        <li><a href="/src/pages/contact.html">Contact</a></li>
+      </ul>
+      <button id="buttonContact">Contatar</button>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="title">
+        <h1>Entre em contato conosco!</h1>
+        <h2>Preencha o fomrulário abaixo: </h2>
+        <div class="form">
+          <div class="inputStyle">
+            <input type="text" name="username" placeholder="Digite seu nome aqui">
+          </div>      
+          <div class="inputStyle">
+            <input type="email" name="email" placeholder="Digite seu email aqui">
+          </div>
+          <div class="inputStyle">
+            <input type="text" name="phone" placeholder="Digite seu telefone aqui">
+          </div>
+          <div class="inputStyle">
+            <textarea name="message" placeholder="Digite sua mensagem aqui"></textarea>
+          </div>
+          <h1>Selecione a opção abaixo de serviço que deseja aplicar em sua empresa:</h1>
+          <div class="ListCheckbox"> 
+            <div class="center">
+              <input type="checkbox" value="dev" id="select-dev" name="servico[]">
+              <label for="select-dev">Dev</label>
+            </div>
+            <div class="center">
+              <input type="checkbox" value="SocialMidia" id="select-SocialMidia" name="servico[]">
+              <label for="select-SocielMidia">Social Mídia</label>
+            </div>
+            <div class="center">
+              <input type="checkbox" value="Marketing" id="select-marketing" name="servico[]">
+              <label for="select-Marketing">Marketing Digital</label>
+            </div>
+          </div>
+          <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+</body>
+</html>
