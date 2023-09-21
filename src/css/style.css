@@ -54,7 +54,7 @@ ul li a:hover{
 
 .firstPage{
   padding: 0 3rem;
-  background-image: url(/src/imagens/rocketBackground.gif);
+  background-image: url(../imagens/rocketBackground.gif);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
