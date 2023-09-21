@@ -106,10 +106,7 @@ ul li a:hover{
   background: deeppink;
 }
 
-#buttonContact{
-  height: 30px;
-  width: 100px;
-  font-family: 'Quicksand', sans-serif;
+.buttonContact{
   outline:none;
   text-align: center;
   border-radius:40px;
@@ -117,13 +114,22 @@ ul li a:hover{
   border: 2px solid deeppink;
   color:deeppink;
   letter-spacing:1px;
-  text-shadow:none;
+  text-shadow: none;
   cursor: pointer;
   transition: all 0.25s ease;
+  height: 30px;
+  width: 100px;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 900;
-
 }
-#buttonContact:hover{
-  color:white;
+.buttonContact:hover{
   background: deeppink;
+}
+
+.buttonContact a{
+  color:deeppink;
+  text-decoration: none;
+}
+.buttonContact:hover a:hover{
+  color:white;
 }
