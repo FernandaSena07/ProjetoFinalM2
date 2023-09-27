@@ -150,3 +150,65 @@ h2{
 .configImg img{
   width: 40%;
 }
+
+.aboutUs{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.textAbout{
+  width: 500px;
+}
+
+.WhoWeAre{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.WhoWeAre p{
+  width: 80%;
+}
+.Services{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.Services p{
+  width: 80%;
+}
+.Services ul{
+  width: 80%;
+  padding: 2%;
+}
+
+.Goals{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Goals p{
+  width: 80%;
+}
+
+.Goals ul{
+  width: 80%;
+  padding: 2%;
+}
+
+.cardInvitation{
+  width: 50%;
+  height: 50%;
+  background-color: blueviolet;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.CentralizeCard {
+  display: flex;
+  justify-content: center;
+}
