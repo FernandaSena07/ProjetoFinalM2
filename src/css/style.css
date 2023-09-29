@@ -5,6 +5,7 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+
 .navBar{
   background-color: #360763;
   height: 5rem;
@@ -19,7 +20,7 @@
   margin: 10px;
   width: 100%;
   height: max-content;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navBar img{
@@ -51,7 +52,7 @@ ul li a:hover{
   color: deeppink;
 }
 
-.firstPage{
+.firstPage {
   padding: 0 3rem;
   background-image: url(../imagens/rocketBackground.gif);
   background-repeat: no-repeat;
@@ -66,8 +67,12 @@ ul li a:hover{
   justify-content: center;
   max-width: 1024px;
   width: 100%;
-  height: 70%;
+  height: 90%;
   gap: 2rem;
+}
+
+.firstPage img{
+  height: calc(100vh - 5rem);
 }
 
 .firstPage h1{
@@ -89,7 +94,7 @@ ul li a:hover{
   border-radius:40px;
   background-color: transparent;
   border: 2px solid deeppink;
-  color:deeppink;
+  color: ghostwhite;
   letter-spacing:1px;
   text-shadow: none;
   cursor: pointer;
@@ -125,9 +130,160 @@ ul li a:hover{
 }
 
 .buttonContact a{
-  color:deeppink;
+  color:ghostwhite;
   text-decoration: none;
 }
 .buttonContact:hover a:hover{
   color:white;
+}
+
+#container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  border: #000 2px solid;
+  height: 600px;
+}
+
+#container .card {
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: center;
+  height: 500px;
+}
+
+#container .card img {
+  transition: 0.5s;
+  height: 50px;
+}
+
+#container .card h1 {
+  font-size: 2rem;
+}
+
+#container .card {
+  padding: 20px;
+  text-align: center;
+}
+
+#container .card p {
+  color: #666;
+  transition: 0.5s;
+}
+
+#container .card a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  margin-top: 80px;
+}
+
+#container .card:hover {
+  background-color: deeppink;
+  color: white;
+  margin-top: -30px;
+  box-shadow: 2px 20px 25px #dc2e685d;
+  border-color: deeppink;
+}
+
+#container .card:hover img {
+  filter: invert(1);
+}
+
+#container .card:hover p {
+  color: white;
+}
+
+#container .card:hover a{
+  color:black;
+  background-color: white;
+}
+
+#boxEmail{
+  background-color: #360763;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+   margin: 0 auto;
+}
+
+.boxItems{
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  width: 70%;
+}
+.boxItems h1{
+  color: #fff;
+    font-weight: 800;
+    font-size: 2.8em;
+    padding: 0.3em 0 0.3em;
+    letter-spacing: -0.06em;
+    text-transform: lowercase;
+}
+.boxItems p{
+  color: #fff;
+    line-height: 1.618em;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.boxItems img{
+  height: 100px;
+
+}
+
+.inputBox{
+  padding: 2em 0 0;
+}
+
+.inputBox input[type="email"]{
+  font-size: 1em;
+  border: 2px solid #fff;
+  color: black;
+  width: 500px;
+  padding: 15px 20px;
+  border-radius: 200px;
+  margin-right: 10px;
+
+}
+
+.inputBox input[type="button"]{
+  font-size: 1em;
+    background: #202633;
+    border: 2px solid #202633;
+    color: #fff;
+    padding: 16px 30px;
+    border-radius: 200px;
+    text-transform: uppercase;
+}
+
+.inputBox input[type="button"]:hover{
+  background: #fff;
+  color:  black;
+  transform: scale(1.1);
+  border: none;
 }
