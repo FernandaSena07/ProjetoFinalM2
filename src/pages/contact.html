@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Contact</title>
 </head>
+
 <body>
+  <script src="script2.js"></script>
   <nav class="navBar">
     <div>
       <a href="../../index.html">
-        <img src="../imagens/logo.png" >
+        <img src="../imagens/logo.png">
       </a>
       <ul>
         <li><a href="../../index.html">Home</a></li>
@@ -25,44 +28,46 @@
       <button class="buttonContact"><a href=mailto:fernanda.sena0709@gmail.com>Contatar</a></button>
     </div>
   </nav>
-    <div class="container">
-      <div class="title">
-        <h1>Entre em contato conosco!</h1>
-        <h2>Preencha o fomrulário abaixo: </h2>
-        <div class="form">
-          <div class="configImg">
-            <img src="../imagens/preenchendo.png" >
+  <div class="container">
+    <div class="title">
+      <h1>Entre em contato conosco!</h1>
+      <h2>Preencha o fomrulário abaixo: </h2>
+      <div class="form">
+        <div class="configImg">
+          <img src="../imagens/preenchendo.png">
           <div class="inputStyle">
-            <input type="text" name="username" placeholder="Digite seu nome aqui">    
-            <input type="email" name="email" placeholder="Digite seu email aqui">
-            <input type="text" name="phone" placeholder="Digite seu telefone aqui">
-          </div>
-          </div>
-          <div class="inputStyle">
-            <textarea resi name="message" placeholder="Digite sua mensagem aqui"></textarea>
-          </div>
-          <h1>Selecione a opção abaixo de serviço que deseja aplicar em sua empresa:</h1>
-          <div class="ListCheckbox"> 
-            <div class="center">
-              <input type="checkbox" value="dev" id="select-dev" name="servico[]">
-              <label for="select-dev">Dev</label>
-            </div>
-            <div class="center">
-              <input type="checkbox" value="SocialMidia" id="select-SocialMidia" name="servico[]">
-              <label for="select-SocielMidia">Social Mídia</label>
-            </div>
-            <div class="center">
-              <input type="checkbox" value="Marketing" id="select-marketing" name="servico[]">
-              <label for="select-Marketing">Marketing Digital</label>
-            </div>
-          </div>
-          <div>
-            <button id="btnLimpar" type="reset">Limpar</button>
-            <button id="btnEnviar" type="submit">Enviar</button>
+            <input type="text" name="username" placeholder="Digite seu nome aqui" autocomplete="name">
+            <input type="email" name="email" placeholder="Digite seu email aqui" autocomplete="email">
+            <input type="text" name="phone" placeholder="Digite seu telefone aqui" autocomplete="tel">
+
           </div>
         </div>
-        
+        <div class="inputStyle">
+          <textarea resi name="message" placeholder="Digite sua mensagem aqui"></textarea>
+        </div>
+        <h1>Selecione a opção abaixo de serviço que deseja aplicar em sua empresa:</h1>
+        <div class="ListCheckbox">
+          <div class="center">
+            <input type="checkbox" value="dev" id="select-dev" name="servico[]">
+            <label for="select-dev">Dev</label>
+          </div>
+          <div class="center">
+            <input type="checkbox" value="SocialMidia" id="select-SocialMidia" name="servico[]">
+            <label for="select-SocialMidia">Social Mídia</label>
+          </div>
+          <div class="center">
+            <input type="checkbox" value="Marketing" id="select-marketing" name="servico[]">
+            <label for="select-marketing">Marketing Digital</label>
+          </div>
+        </div>
+        <div>
+          <button id="btnLimpar" type="reset">Limpar</button>
+          <button id="btnEnviar" type="submit">Enviar</button>
+        </div>
       </div>
+
     </div>
+  </div>
 </body>
+
 </html>
