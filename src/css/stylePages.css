@@ -22,7 +22,10 @@ header{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: 100%;
   margin-bottom: 5%;
-  max-width: 50%;
+  width: 40%;
+  top: 50px;
+  transform: scale(1.2);
+  
 }
 
 .form{
@@ -150,7 +153,6 @@ h2{
 .configImg img{
   width: 40%;
 }
-
 .aboutUs{
   display: flex;
   align-items: center;
@@ -211,4 +213,41 @@ h2{
 .CentralizeCard {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1440px) {
+  .container{
+    width: 70%;
+    top: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .container{
+    width: 70%;
+    top: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container{
+    width: 70%;
+  }
+  .form div {
+    display: block;
+  }
+  .inputStyle input{
+    margin: 5px;
+  }
+
+  .imgAbout img{
+   visibility: hidden;
+   width: 50px;
+   height: 200px;
+  }
+
+  .cardInvitation{
+    width: 90%;
+
+  }
+
 }

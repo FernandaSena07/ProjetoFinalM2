@@ -5,8 +5,7 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-
-.navBar{
+.navBar {
   background-color: #360763;
   height: 5rem;
   display: flex;
@@ -19,11 +18,10 @@
   align-items: center;
   margin: 10px;
   width: 100%;
-  height: max-content;
   justify-content: space-around;
 }
 
-.navBar img{
+.navBar img {
   height: 4rem;
 }
 
@@ -33,7 +31,7 @@
   gap: 1rem;
 }
 
-.menuBar ul{
+.menuBar ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -41,14 +39,15 @@
   gap: 1rem;
 }
 
-ul li a{
+ul li a {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   color: ghostwhite;
   text-decoration: none;
 }
-ul li a:hover{
+
+ul li a:hover {
   color: deeppink;
 }
 
@@ -71,64 +70,62 @@ ul li a:hover{
   gap: 2rem;
 }
 
-.firstPage img{
+.firstPage img {
   height: calc(100vh - 5rem);
 }
 
-.firstPage h1{
+.firstPage h1 {
   font-size: 40px;
   font-weight: bold;
   color: ghostwhite;
   top: 20%;
 }
 
-.firstPage h2{
+.firstPage h2 {
   width: 50%;
   font-size: 20px;
-  color:  ghostwhite;
+  color: ghostwhite;
 }
 
-.btnContact{
-  outline:none;
+.btnContact {
+  outline: none;
   text-align: center;
-  border-radius:40px;
+  border-radius: 40px;
   background-color: transparent;
   border: 2px solid deeppink;
   color: ghostwhite;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   height: 50px;
   width: 150px;
 }
 
-.btnContact a{
+.btnContact a {
   text-shadow: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  color:deeppink;
+  color: deeppink;
   text-decoration: none;
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
   transition: all 0.20s ease;
 }
 
-.btnContact a:hover{
-
-  color:white;
+.btnContact a:hover {
+  color: white;
 }
 
-.firstPage button:hover{
-  
+.firstPage button:hover {
   background: deeppink;
 }
 
-.buttonContact{
-  outline:none;
+.buttonContact {
+  outline: none;
   text-align: center;
-  border-radius:40px;
+  border-radius: 40px;
   background-color: transparent;
   border: 2px solid deeppink;
-  color:deeppink;
-  letter-spacing:1px;
+  color: deeppink;
+  letter-spacing: 1px;
   text-shadow: none;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -137,63 +134,68 @@ ul li a:hover{
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
 }
-.buttonContact:hover{
+
+.buttonContact:hover {
   background: deeppink;
 }
 
-.buttonContact a{
-  color:ghostwhite;
+.buttonContact a {
+  color: ghostwhite;
   text-decoration: none;
 }
-.buttonContact:hover a:hover{
-  color:white;
+
+.buttonContact:hover a:hover {
+  color: white;
 }
 
-#container {
-  width: 100%;
-  padding: 20px;
+.container {
+  position: relative;
+  padding: 15px;
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: auto;
-  border: #000 2px solid;
-  height: 600px;
+  justify-content: center;
+  padding-left: 10px;
 }
 
-#container .card {
+.gallery-wrapper {
+  overflow-x: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.item {
+  width: 250px;
+  height: 400px;
+  transition: all 700ms ease-in-out;
   position: relative;
   padding: 10px;
-  width: 300px;
   background-color: #fff;
-  border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
-  transition: 0.5s;
   text-align: center;
-  height: 500px;
+  border: #000 1px solid;
+  margin: 30px;
 }
 
-#container .card img {
+.item img {
   transition: 0.5s;
   height: 50px;
 }
 
-#container .card h1 {
+.item h1 {
   font-size: 2rem;
 }
 
-#container .card {
-  padding: 20px;
-  text-align: center;
-}
-
-#container .card p {
+.item p {
   color: #666;
   transition: 0.5s;
 }
 
-#container .card a {
+.item a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -206,28 +208,29 @@ ul li a:hover{
   margin-top: 80px;
 }
 
-#container .card:hover {
+.item:hover {
   background-color: deeppink;
   color: white;
-  margin-top: -30px;
+  margin-top: -10px;
   box-shadow: 2px 20px 25px #dc2e685d;
   border-color: deeppink;
 }
 
-#container .card:hover img {
+.item:hover img {
   filter: invert(1);
 }
 
-#container .card:hover p {
+.item:hover p {
   color: white;
 }
 
-#container .card:hover a{
-  color:black;
+.item:hover a {
+  color: black;
   background-color: white;
 }
 
-#boxEmail{
+
+#boxEmail {
   background-color: #360763;
   display: flex;
   justify-content: center;
@@ -236,10 +239,10 @@ ul li a:hover{
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
-.boxItems{
+.boxItems {
   display: flex;
   justify-content: center;
   height: 300px;
@@ -248,31 +251,32 @@ ul li a:hover{
   margin: 20px;
   width: 70%;
 }
-.boxItems h1{
+
+.boxItems h1 {
   color: #fff;
-    font-weight: 800;
-    font-size: 2.8em;
-    padding: 0.3em 0 0.3em;
-    letter-spacing: -0.06em;
-    text-transform: lowercase;
-}
-.boxItems p{
-  color: #fff;
-    line-height: 1.618em;
-    font-size: 1.1em;
-    font-weight: 300;
+  font-weight: 800;
+  font-size: 2.8em;
+  padding: 0.3em 0 0.3em;
+  letter-spacing: -0.06em;
+  text-transform: lowercase;
 }
 
-.boxItems img{
+.boxItems p {
+  color: #fff;
+  line-height: 1.618em;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.boxItems img {
   height: 100px;
-
 }
 
-.inputBox{
+.inputBox {
   padding: 2em 0 0;
 }
 
-.inputBox input[type="email"]{
+.inputBox input[type="email"] {
   font-size: 1em;
   border: 2px solid #fff;
   color: black;
@@ -280,22 +284,142 @@ ul li a:hover{
   padding: 15px 20px;
   border-radius: 200px;
   margin-right: 10px;
-
 }
 
-.inputBox input[type="button"]{
+.inputBox input[type="button"] {
   font-size: 1em;
-    background: #202633;
-    border: 2px solid #202633;
-    color: #fff;
-    padding: 16px 30px;
-    border-radius: 200px;
-    text-transform: uppercase;
+  background: #202633;
+  border: 2px solid #202633;
+  color: #fff;
+  padding: 16px 30px;
+  border-radius: 200px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.inputBox input[type="button"]:hover{
+.inputBox input[type="button"]:hover {
   background: #fff;
-  color:  black;
+  color: black;
   transform: scale(1.1);
   border: none;
+}
+
+@media (max-width: 1440px) {
+  .item {
+    width: 80%;
+    margin: 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .navBar {
+    height: 7rem;
+  }
+  
+  .navBar div {
+    margin: 15px;
+  }
+
+  .firstPage h1 {
+    font-size: 36px;
+  }
+
+  .boxItems h1 {
+    font-size: 2.5em;
+  }
+
+  .inputBox input[type="email"] {
+    width: 400px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .item {
+    float: left;
+    height: 200px;
+    width: 50%;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .item p,
+  .item h1 {
+    font-size: 20px;
+  }
+
+  .item:hover {
+    margin-top: 0;
+  }
+
+  .gallery {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .navBar {
+    height: 10rem;
+  }
+
+  .navBar div {
+    margin: 10px;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .firstPage h1 {
+    font-size: 24px;
+  }
+
+  .firstPage h2 {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .boxItems h1 {
+    font-size: 2em;
+  }
+
+  .boxItems img {
+    height: 60px;
+  }
+
+  .boxItems p {
+    font-size: 1em;
+  }
+
+  .inputBox input[type="email"] {
+    width: 160px;
+  }
+
+  .inputBox input[type="button"] {
+    font-size: 10px;
+    width: 70px;
+    padding: 10px 10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .item {
+    float: left;
+    height: 200px;
+    margin: 0;
+    width: 50%;
+  }
+
+  .item p,
+  .item h1 {
+    font-size: 15px;
+  }
+
+  .item:hover {
+    margin-top: 0;
+  }
+
+  .gallery {
+    display: block;
+  }
 }
