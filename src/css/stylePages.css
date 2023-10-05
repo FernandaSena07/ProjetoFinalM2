@@ -231,6 +231,7 @@ h2{
 @media (max-width: 425px) {
   .container{
     width: 70%;
+    top: 59px;
   }
   .form div {
     display: block;
