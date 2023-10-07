@@ -161,6 +161,7 @@ h2{
 
 .textAbout{
   width: 500px;
+  text-align: justify;
 }
 
 .WhoWeAre{
@@ -168,9 +169,17 @@ h2{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 3%;
 }
 .WhoWeAre p{
   width: 80%;
+}
+.whychoose{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3%;
 }
 .Services{
   display: flex;
@@ -191,6 +200,7 @@ h2{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 3%;
 }
 
 .Goals p{
@@ -213,6 +223,20 @@ h2{
 .CentralizeCard {
   display: flex;
   justify-content: center;
+}
+
+.formattingText{
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+}
+
+.formattingText p{
+  width: 70%;
+}
+
+.formattingText ul{
+  width: 70%;
 }
 
 @media (max-width: 1440px) {
