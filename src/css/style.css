@@ -97,6 +97,7 @@ ul li a:hover {
   letter-spacing: 1px;
   height: 50px;
   width: 150px;
+  cursor: pointer;
 }
 
 .btnContact a {
