@@ -1,0 +1,113 @@
+.aboutUs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  h1{color:  deeppink;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .textAbout{
+    width: 500px;
+    text-align: justify;
+  }
+  
+  .WhoWeAre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+  .WhoWeAre p{
+    width: 80%;
+  }
+  .whychoose{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+  .Services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Services p{
+    width: 80%;
+  }
+  .Services ul{
+    width: 80%;
+    padding: 2%;
+  }
+  
+  .Goals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+  
+  .Goals p{
+    width: 80%;
+  }
+  
+  .Goals ul{
+    width: 80%;
+    padding: 2%;
+  }
+  
+  .cardInvitation{
+    width: 50%;
+    height: 50%;
+    background-color: blueviolet;
+    padding: 2%;
+    border-radius: 5px;
+  }
+  
+  .CentralizeCard {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formattingText{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+  }
+  
+  .formattingText p{
+    width: 70%;
+  }
+  
+  .formattingText ul{
+    width: 70%;
+  }
+
+  @media (max-width: 425px) {
+    .imgAbout img{
+     visibility: hidden;
+     width: 50px;
+     height: 200px;
+    }
+    h1{
+      font-size: 15px;
+    }
+.textAbout{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-right: 20px;
+}
+.textAbout h1{
+  width: 40%;
+}
+.textAbout p{
+  width: 92%;
+}
+  }  

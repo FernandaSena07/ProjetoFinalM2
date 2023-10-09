@@ -1,0 +1,50 @@
+.list {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list h2{
+    color:deeppink;
+    font-size: 20px;
+    margin-bottom: 5px;  
+  }
+  
+  
+  /* Adicione regras de estilo específicas para telas menores */
+  @media (max-width: 768px) {
+    .list {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos para a tabela de convidados */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  table td p{
+    font:bold;
+  }
+  /* ... */
+  
+  /* Adicione regras de estilo específicas para telas menores */
+  @media (max-width: 768px) {
+    table th, table td {
+      padding: 5px;
+      font-size: 12px;
+    }
+  }

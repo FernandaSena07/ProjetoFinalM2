@@ -1,0 +1,187 @@
+.container{
+    border-color: deeppink;
+    border-style: solid;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 3%;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    margin-bottom: 5%;
+    width: 40%;
+    top: 50px;
+    transform: scale(1.2);
+    position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+
+
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .form div{
+    margin-bottom: 3%;
+    display: flex;
+  }
+  
+  .form a{
+    visibility: hidden;
+    margin-top: -28px;
+  }
+  
+  
+  .inputStyle{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .inputStyle input {
+    padding: 2% 1rem;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid black;
+  }
+  
+  .inputStyle textarea{
+    padding: 2%;
+    width: 100%;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .title{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  h1{
+    color: deeppink;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  h2{
+    font-size: 16px;
+    margin-bottom: 3%;
+  }
+  
+  .center{
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  .ListCheckbox{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    justify-content: space-around;
+  }
+  
+  .center input{
+    margin-right: 5px;
+  }
+  
+  #btnEnviar{
+    outline:none;
+    text-align: center;
+    border-radius:40px;
+    background-color: transparent;
+    border: 2px solid deeppink;
+    color:deeppink;
+    letter-spacing:1px;
+    text-shadow:0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    top: 50%;
+    height: 30px;
+    width: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900; 
+    margin-right: 15px;
+  }
+  
+  #btnEnviar:hover{
+    color:white;
+    background: deeppink;
+  }
+  
+  #btnLimpar{
+    outline:none;
+    text-align: center;
+    border-radius:40px;
+    background-color: transparent;
+    border: 2px solid deeppink;
+    color:deeppink;
+    letter-spacing:1px;
+    text-shadow:0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    top: 50%;
+    height: 30px;
+    width: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900; 
+    margin-right: 15px;
+  }
+  
+  #btnLimpar:hover{
+    color:white;
+    background: deeppink;
+  }
+  
+  .configImg{
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+  }
+  
+  .configImg img{
+    width: 40%;
+  }
+
+  @media (max-width: 1440px) {
+    .container{
+      width: 70%;
+      top: 200px;
+    }
+  }
+  @media (max-width: 768px) {
+    .container{
+      width: 70%;
+      top: 200px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .container{
+      width: 70%;
+      top: 59px;
+    }
+    .form div {
+      display: block;
+    }
+    .inputStyle input{
+      margin: 5px;
+    }
+    .cardInvitation{
+      width: 90%;
+  
+    }
+  
+  }

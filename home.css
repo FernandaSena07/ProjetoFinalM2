@@ -1,0 +1,270 @@
+.firstPage {
+    padding: 0 3rem;
+    background-image: url(/src/assets/background/rocketBackgroundHome.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 5rem);
+  }
+  
+  .firstPage div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1024px;
+    width: 100%;
+    height: 90%;
+    gap: 2rem;
+  }
+  
+  .firstPage img {
+    height: calc(100vh - 5rem);
+  }
+  
+  .firstPage h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: ghostwhite;
+    top: 20%;
+  }
+  
+  .firstPage h2 {
+    width: 50%;
+    font-size: 20px;
+    color: ghostwhite;
+  }
+  
+  .btnContact {
+    outline: none;
+    text-align: center;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 2px solid deeppink;
+    color: ghostwhite;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .btnContact a {
+    text-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: deeppink;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    transition: all 0.20s ease;
+  }
+  
+  .btnContact a:hover {
+    color: white;
+  }
+  
+  .firstPage button:hover {
+    background: deeppink;
+  }
+  
+  
+  .container {
+    position: relative;
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .item {
+    width: 250px;
+    height: 400px;
+    transition: all 700ms ease-in-out;
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    border: #000 1px solid;
+    margin: 30px;
+  }
+  
+  .item img {
+    transition: 0.5s;
+    height: 50px;
+  }
+  
+  .item h1 {
+    font-size: 2rem;
+  }
+  
+  .item p {
+    color: #666;
+    transition: 0.5s;
+  }
+  
+  .item a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 80px;
+  }
+  
+  .item:hover {
+    background-color: deeppink;
+    color: white;
+    margin-top: -10px;
+    box-shadow: 2px 20px 25px #dc2e685d;
+    border-color: deeppink;
+  }
+  
+  .item:hover img {
+    filter: invert(1);
+  }
+  
+  .item:hover p {
+    color: white;
+  }
+  
+  .item:hover a {
+    color: black;
+    background-color: white;
+  }
+  
+.boxItems {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 70%;
+  }
+  
+  .boxItems h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.8em;
+    padding: 0.3em 0 0.3em;
+    letter-spacing: -0.06em;
+    text-transform: lowercase;
+  }
+  
+  .boxItems p {
+    color: #fff;
+    line-height: 1.618em;
+    font-size: 1.1em;
+    font-weight: 300;
+  }
+  
+  .boxItems img {
+    height: 100px;
+  }
+  @media (max-width: 1440px) {
+    .item {
+      width: 80%;
+      margin: 15px;
+    }
+  }  
+
+  @media (max-width: 1199px) {
+  
+    .firstPage h1 {
+      font-size: 36px;
+    }
+  
+    .boxItems h1 {
+      font-size: 2.5em;
+    }
+  
+  
+    .container {
+      width: 100%;
+    }
+  
+    .item {
+      float: left;
+      height: 200px;
+      width: 50%;
+      padding: 15px;
+      margin: 0;
+    }
+  
+    .item p,
+    .item h1 {
+      font-size: 20px;
+    }
+  
+    .item:hover {
+      margin-top: 0;
+    }
+  
+    .gallery {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+  
+    .firstPage h1 {
+      font-size: 24px;
+    }
+  
+    .firstPage h2 {
+      font-size: 16px;
+      width: 80%;
+    }
+  
+    .boxItems h1 {
+      font-size: 2em;
+    }
+  
+    .boxItems img {
+      height: 60px;
+    }
+  
+    .boxItems p {
+      font-size: 1em;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  
+    .item {
+      float: left;
+      height: 200px;
+      margin: 0;
+      width: 50%;
+    }
+  
+    .item p,
+    .item h1 {
+      font-size: 15px;
+    }
+  
+    .item:hover {
+      margin-top: 0;
+    }
+  
+    .gallery {
+      display: block;
+    }
+  }

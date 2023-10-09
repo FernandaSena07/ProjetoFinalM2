@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/stylePages.css">
+  <link rel="stylesheet" href="/src/global/style.css">
+  <link rel="stylesheet" href="/src/pages/contact/contact.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,16 +13,15 @@
 </head>
 
 <body>
-  <script src="script2.js"></script>
   <nav class="navBar">
     <div>
       <a href="../../index.html">
-        <img src="../imagens/logo.png">
+        <img src="/src/assets/icons/iconLogo.png">
       </a>
       <ul>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
       </ul>
       <button class="buttonContact"><a href=mailto:Grupo4M2@gmail.com>Contatar</a></button>
     </div>
@@ -33,11 +32,14 @@
       <h2>Preencha o fomrulário abaixo: </h2>
       <div class="form">
         <div class="configImg">
-          <img src="../imagens/preenchendo.png">
+          <img src="/src/assets/icons/iconContact.png">
           <div class="inputStyle">
             <input type="text" name="username" placeholder="Digite seu nome aqui" autocomplete="name">
+            <a class="error">Mensagem de erro</a>
             <input type="email" name="email" placeholder="Digite seu email aqui" autocomplete="email">
-            <input type="text" name="phone" placeholder="Digite seu telefone aqui" autocomplete="tel">
+            <a class="error">Mensagem de erro</a>
+            <input type="number" name="phone" placeholder="Digite seu telefone aqui" autocomplete="tel">
+            <a class="error">Mensagem de erro</a>
 
           </div>
         </div>
@@ -64,9 +66,9 @@
           <button id="btnEnviar" type="submit">Enviar</button>
         </div>
       </div>
-
     </div>
   </div>
+  <script src="contact.js"></script>
 </body>
 
 </html>
