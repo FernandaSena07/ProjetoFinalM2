@@ -1,6 +1,6 @@
 .firstPage {
     padding: 0 3rem;
-    background-image: url(/src/assets/background/rocketBackgroundHome.gif);
+    background-image: url(./src/assets/background/rocketBackgroundHome.gif);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
