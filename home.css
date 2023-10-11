@@ -51,15 +51,11 @@
     text-shadow: none;
     cursor: pointer;
     transition: all 0.2s ease;
-    color: deeppink;
+    color: ghostwhite;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: 900;
     transition: all 0.20s ease;
-  }
-  
-  .btnContact a:hover {
-    color: white;
   }
   
   .firstPage button:hover {

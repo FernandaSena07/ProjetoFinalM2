@@ -51,7 +51,37 @@ ul li a:hover {
   color: deeppink;
 }
 
+.buttonLogin{
+  outline: none;
+  text-align: center;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 2px solid deeppink;
+  color: deeppink;
+  letter-spacing: 1px;
+  text-shadow: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  height: 30px;
+  width: 200px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
+  position: absolute;
+  right: 70px;
+  margin-left: 50px;
+}
+.buttonLogin:hover {
+  background: deeppink;
+}
 
+.buttonLogin a {
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.buttonLogin:hover a:hover {
+  color: white;
+}
 .buttonContact {
   outline: none;
   text-align: center;
@@ -67,6 +97,7 @@ ul li a:hover {
   width: 100px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
+  margin-right: 70px;
 }
 
 .buttonContact:hover {
@@ -208,5 +239,13 @@ ul li a:hover {
     font-size: 10px;
     width: 70px;
     padding: 10px 10px;
+  }
+  .buttonContact{
+    margin-right: 200px;
+  }
+  .buttonLogin{
+    bottom: 77%;
+    left: 100px;
+    width: 170px;
   }
 }
