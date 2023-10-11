@@ -4,12 +4,12 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
     
     let valid = true;
-    const nome = document.querySelector('input[name="username"]').value;
+    const name = document.querySelector('input[name="username"]').value;
     const email = document.querySelector('input[name="email"]').value;
-    const telefone = document.querySelector('input[name="phone"]').value;
-    const mensagem = document.querySelector('textarea[name="message"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const menssage = document.querySelector('textarea[name="message"]').value;
 
-    if (nome === "") {
+    if (name === "") {
         valid = false;
     }
 
@@ -17,12 +17,12 @@ form.addEventListener("submit", function(event) {
         valid = false;
     }
 
-    if (telefone.length < 11) {
+    if (phone.length < 11) {
         alert("O número de telefone deve conter o DDD.");
         valid = false;
     }
 
-    if (mensagem === "") {
+    if (menssage === "") {
         valid = false;
     }
 
