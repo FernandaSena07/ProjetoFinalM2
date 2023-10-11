@@ -63,12 +63,10 @@ ul li a:hover {
   cursor: pointer;
   transition: all 0.25s ease;
   height: 30px;
-  width: 200px;
+  width: 100px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 900;
-  position: absolute;
-  right: 70px;
-  margin-left: 50px;
+  margin-left: -450px;
 }
 .buttonLogin:hover {
   background: deeppink;
@@ -206,8 +204,19 @@ ul li a:hover {
   }
 
 }
+@media (max-width: 1440px) {
+  .buttonLogin{
+    margin-left: -300px;
+  }
+  }
+  
+@media (max-width: 1024px) {
+  .buttonLogin{
+    margin-left: -180px;
+  }
+  }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navBar {
     height: 10rem;
   }
@@ -241,11 +250,28 @@ ul li a:hover {
     padding: 10px 10px;
   }
   .buttonContact{
-    margin-right: 200px;
+    margin-right: 120px;
   }
   .buttonLogin{
-    bottom: 77%;
-    left: 100px;
-    width: 170px;
+    position: absolute;
+    top: 124px;
+    right: 280px;
+  }
+}
+@media (max-width: 425px) {
+  .buttonLogin{
+    right: 100px;
+  }
+}
+
+@media (max-width: 375px) {
+  .buttonLogin{
+    right: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .buttonLogin{
+    right: 60px;
   }
 }

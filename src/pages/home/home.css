@@ -216,8 +216,91 @@
       display: block;
     }
   }
+  @media (max-width: 1024px) {
+    .item{
+      float: left;
+      height: 200px;
+      margin: 0;
+      width: 70%;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    #firstCard{
+      width: 1000px;
+    }
+    #secondCard{
+      width: 1000px;
+    }
+    #lastCard{
+      width: 1000px;
+    }
+  }
+  @media (max-width: 768px) {
+    .item{
+      float: left;
+      height: 200px;
+      margin: 0;
+      width: 70%;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    #firstCard{
+      width: 750px;
+    }
+    #secondCard{
+      width: 750px;
+    }
+    #lastCard{
+      width: 750px;
+    }
+  }
   
-  @media (max-width: 767px) {
+  @media (max-width: 475px) {
+    .item{
+      float: left;
+      height: 200px;
+      margin: 0;
+      width: 70%;
+      margin-bottom: 20px;
+    }
+    #firstCard{
+      width: 370px;
+    }
+    #secondCard{
+      width: 370px;
+    }
+    #lastCard{
+      width: 370px;
+    }
+  }
+  @media (max-width: 425px) {
+    .gallery{
+      height: 50%;
+    }
+    .item{
+      float: left;
+      height: 200px;
+      margin: 0;
+      width: 70%;
+      margin-bottom: 20px;
+      margin-left: 5px;
+      
+    }
+    #firstCard{
+      width: 400px;
+      height: 35%;
+    }
+    #secondCard{
+      width: 400px;
+      height: 35%;
+    }
+    #lastCard{
+      width: 400px;
+      height: 35%;
+    }
+  }
+
+  @media (max-width: 375px) {
   
     .firstPage h1 {
       font-size: 24px;
@@ -248,7 +331,8 @@
       float: left;
       height: 200px;
       margin: 0;
-      width: 50%;
+      width: 70%;
+      margin-bottom: 20px;
     }
   
     .item p,
@@ -262,5 +346,34 @@
   
     .gallery {
       display: block;
+    }
+    #firstCard{
+      width: 350px;
+      
+    }
+    #secondCard{
+      width: 350px;
+    }
+    #lastCard{
+      width: 350px;
+    }
+  }
+  @media (max-width: 320px) {
+    .item{
+      float: left;
+      height: 200px;
+      margin: 0;
+      width: 70%;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    #firstCard{
+      width: 320px;
+    }
+    #secondCard{
+      width: 320px;
+    }
+    #lastCard{
+      width: 320px;
     }
   }
