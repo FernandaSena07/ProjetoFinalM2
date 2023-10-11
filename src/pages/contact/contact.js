@@ -1,45 +1,46 @@
-document.addEventListener('DOMContentLoaded', function () {
-  
-  const btnEnviar = document.getElementById('btnEnviar');
+const form = document.getElementsByTagName("form")[0];
 
-  
-  btnEnviar.addEventListener('click', function () {
-   
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let valid = true;
     const nome = document.querySelector('input[name="username"]').value;
     const email = document.querySelector('input[name="email"]').value;
     const telefone = document.querySelector('input[name="phone"]').value;
     const mensagem = document.querySelector('textarea[name="message"]').value;
 
-  
-    const dadosDoFormulario = {
-      Nome: nome,
-      Email: email,
-      Telefone: telefone,
-      Mensagem: mensagem,
-    };
+    if (nome === "") {
+        valid = false;
+    }
 
-   
-    console.log(dadosDoFormulario);
-  });
-});
-document.addEventListener('DOMContentLoaded', function () {
- 
-  const btnLimpar = document.getElementById('btnLimpar');
+    if (email === "") {
+        valid = false;
+    }
 
- 
-  btnLimpar.addEventListener('click', function () {
-   
-    const nomeInput = document.querySelector('input[name="username"]');
-    const emailInput = document.querySelector('input[name="email"]');
-    const telefoneInput = document.querySelector('input[name="phone"]');
-    const mensagemTextarea = document.querySelector('textarea[name="message"]');
+    if (telefone.length < 11) {
+        alert("O número de telefone deve conter o DDD.");
+        valid = false;
+    }
 
-   
-    nomeInput.value = "";
-    emailInput.value = "";
-    telefoneInput.value = "";
-    mensagemTextarea.value = "";
-  });
+    if (mensagem === "") {
+        valid = false;
+    }
+
+    if (valid) {
+        document.querySelector('input[name="username"]').value = "";
+        document.querySelector('input[name="email"]').value = "";
+        document.querySelector('input[name="phone"]').value = "";
+        document.querySelector('textarea[name="message"]').value = "";
+
+        alert("O formulário foi enviado com sucesso.");
+    } else {
+        alert("Por favor, preencha todos os campos corretamente.");
+    }
 });
 
-
+function clearForm() {
+    document.querySelector('input[name="username"]').value = "";
+    document.querySelector('input[name="email"]').value = "";
+    document.querySelector('input[name="phone"]').value = "";
+    document.querySelector('textarea[name="message"]').value = "";
+};
