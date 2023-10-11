@@ -4,7 +4,7 @@ function Login() {
     var senha = document.getElementById('senha').value;
 
     if (usuario === "admin" && senha === "admin") {
-        window.location = "/p/admin.html";
+        window.location = "../controleCadastro/controleCadastro.html";
         done = 1;
     }
 
