@@ -1,19 +1,19 @@
 function Login() {
-    var done = 0;
-    var usuario = document.getElementById('username').value;
-    var senha = document.getElementById('senha').value;
-
-    if (usuario === "admin" && senha === "admin") {
-        window.location = "../controleCadastro/controleCadastro.html";
-        done = 1;
+    var username = document.getElementById("username").value;
+    var senha = document.getElementById("senha").value;
+  
+    var storedUsername = localStorage.getItem('username');
+    var storedPassword = localStorage.getItem('password');
+  
+    if (username === storedUsername && senha === storedPassword) {
+      alert("Login bem-sucedido!");
+    } else {
+      alert("Dados incorretos, tente novamente.");
     }
-
-    if (done === 0) {
-        alert("Dados incorretos, tente novamente");
-    }
-}
-
-document.getElementById('form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Impede o envio padrão do formulário
-    Login(); // 
-});
+  }
+  
+  document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    Login();
+  });
+  

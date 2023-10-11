@@ -1,0 +1,132 @@
+.background{
+  background-color: #360763;
+}
+.background img{
+  width: 100%;
+  height: 930px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+#cadastro{
+  background-color:  ghostwhite;
+  margin: 15px;
+  max-width: 600px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #360763;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.header h2{
+  color: ghostwhite;
+}
+
+#form {
+  padding: 20px;
+  color: black;
+}
+
+.cadastro-form{
+  margin-bottom: 8px;
+  padding-bottom:18px ;
+  position: relative;
+}
+
+.cadastro-form label{
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.cadastro-form input{
+  display: block;
+  width: 95%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  border-color: #38324C;
+}
+.cadastro-form a{
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  bottom: -7px;
+}
+.cadastro-form img{
+  display: flex;
+  left: 238px;
+  position: absolute;
+  visibility: hidden;
+}
+#cadastro button{
+  background-color: #360763;
+  color: aliceblue;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+#cadastro button:hover{
+  background-color: deeppink;
+  padding: 10px;
+}
+.cadastro-form.error input{
+  border-color: #e50615;
+}
+.error {
+  color: #e50615;
+  visibility: visible;
+  margin-top: 5px;
+}
+.cadastro-form.error img{
+  visibility: visible;
+}
+
+#cadastro p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#cadastro a {
+  color: #360763; /* Cor do link "Cadastrar" */
+  text-decoration: none;
+}
+
+#cadastro a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+header{
+  font-size: 12px;
+}
+
+
+  #cadastro {
+     width: 80%;
+     font-size: 12px;
+     position: absolute;
+     left: 193px;
+   }
+
+ }
