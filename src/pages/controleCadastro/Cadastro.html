@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/global/style.css">
+    <link rel="stylesheet" href="../controleCadastro/Cadastro.css">
+    <link rel="stylesheet" href="/src/pages/controleCadastro/Cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+  <nav class="navBar">
+    <div>
+      <a href="../../index.html">
+        <img src="/src/assets/icons/iconLogo.png">
+      </a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <button class="buttonLogin"><a href="../login/login.html">Login</a></button>
+      </ul>
+      <button class="buttonContact"><a href="mailto:Grupo4M2@gmail.com">Contatar</a></button>
+    </div>
+  </nav>
+  <div class="background">
+    <img src="../../assets/background/backgroundLogin.jpg">
+  </div>
+  <div id="cadastro">
+    <section class="header">
+      <h2>Faça seu cadastro</h2>
+    </section>
+    <form id="form">
+      <div class="cadastro-form">
+        <label for="username">Nome de usuário:</label>
+        <input type="text" id="username" placeholder="digite o nome de usuário">
+        <a class="error" id="error-username">Mensagem de erro</a>
+      </div>
+      <div class="cadastro-form">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="digite sua senha">
+        <a class="error" id="error-senha">Mensagem de erro</a>
+      </div>
+      <div class="cadastro-form">
+        <label for="confirmPassword">Confirme sua senha:</label>
+        <input type="password" id="confirmPassword" placeholder="confirme sua senha">
+        <a class="error" id="error-confirmPassword">Mensagem de erro</a>
+      </div>
+      <button type="submit">Cadastrar</button>
+      <p>Já possui um cadastro? <a href="../login/login.html">Faça login</a></p>
+    </form>
+  </div>
+  <div id="all">
+    <script src="cadastro.js"></script>
+  </div>
+</body>
+</html>
